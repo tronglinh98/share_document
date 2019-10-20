@@ -28,10 +28,13 @@
         include "../user/RegisterController.php";
     }
  //Khong dang nhap van xem dc trang chu   
-    if(isset($_GET["act"]) && $_GET["act"]=="login") {
+    else if(isset($_GET["act"]) && $_GET["act"]=="login") {
         include "../user/LoginController.php";
     } else{
+        $isLogin = isset($_SESSION['account']) ? 1 : 0;
         $controller = isset($_GET["controller"])?"../author/".$_GET["controller"]."Controller.php":"../author/home.php";
+        $areas = Model::fetch(" select * from areas ");
+
         include "../../view/author/layout/index2.php";
     }
     

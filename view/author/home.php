@@ -21,7 +21,7 @@
                                
                             </figure>
                             <div class="pl-caption" style="float: left; text-decoration: none; text-align: left; ">
-                               <a style="text-decoration: none; " href="controller/author/index.php?controller=MyDoc/doc&token=<?php echo $value['token']?>">
+                               <a style="text-decoration: none; " href="controller/author/index.php?controller=MyDoc/detaildoc&doc_id=<?php echo $value[0]?>">
                                  <p class="pl-name" style=" height: 50px; overflow: hidden;"><?php echo $value["title"] ?></p>
                                </a>
                                <a href="Controller/Author/index.php?controller=MyDoc/detaildoc&doc_id=<?php echo $value[0]?>">

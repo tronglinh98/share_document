@@ -10,6 +10,7 @@
 
     <div>
         <i class="icon icon-eye"></i>
+        <span> <?php echo $data[0]['view_count'] ?></span>
     </div>
     <div class="centered">
         <iframe src="<?php echo $data[0]['file_upload'] ?>" height="700px" width="70%">
