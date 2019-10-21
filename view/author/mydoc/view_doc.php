@@ -13,7 +13,7 @@
         <span> <?php echo $data[0]['view_count'] ?></span>
     </div>
     <div class="centered">
-        <iframe src="<?php echo $data[0]['file_upload'] ?>" height="700px" width="70%">
+            <iframe src="<?php echo $data[0]['file_upload'] ?>#aligner=0" height="700px" width="70%">
         </iframe>
     </div>
 </div>
